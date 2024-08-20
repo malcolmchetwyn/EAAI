@@ -14,7 +14,7 @@ Ultimately, reducing time-to-visibility allows solution architects, enterprise a
 
 Overview: The diagram illustrates how enterprise architecture (EA) models, standards, and guardrails are integrated into a DevOps pipeline to ensure alignment with architectural standards throughout the development lifecycle. It emphasizes the use of AI tools to enhance governance.
 
-[![](https://i.postimg.cc/PqjdGjx5/Screenshot-2024-08-20-at-4-56-44-PM.png)](https://i.postimg.cc/PqjdGjx5/Screenshot-2024-08-20-at-4-56-44-PM.png)
+[![](https://i.postimg.cc/N0zTqw99/Screenshot-2024-08-20-at-4-56-44-PM.png)](https://i.postimg.cc/N0zTqw99/Screenshot-2024-08-20-at-4-56-44-PM.png)
 
 #### Key Components:
 - Enterprise Architecture Models: Includes blueprints, standards, and solution design that are evaluated against defined guardrails.
