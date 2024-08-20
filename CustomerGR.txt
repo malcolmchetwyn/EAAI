@@ -1,0 +1,130 @@
+Salesforce Platform Guardrails (1)
+#
+Guardrail
+Details
+G-01
+Platform : Upgrades & continuous innovation
+Recommendation is for Bendigo to leverage continuous innovation delivered as part of 3x major Salesforce releases 
+Salesforce performs three major upgrades to the service each year.  Each major release has published Release Notes.  Upgrades provide feature improvements of all shapes and sizes. On average, there are 150+ new features per release, but it often includes many more minor enhancements under the covers.
+Major changes for Generally Available (GA) features are typically protected by permissioning that is controllable by Bendigo. Typical development patterns are to enable new features in sandbox and developer orgs, and push those changes into production orgs based on a standard development lifecycle process.
+G-02
+Platform : Help shape product roadmap
+Prefer leveraging Salesforce product roadmap/future releases for capabilities that are currently not available over custom build where possible. Rationale is the lower Total Cost of Ownership (TCO) and high scalability.
+Actively leverage the strategic relationship with Salesforce (through channels such as Sales, Customer Success, Professional Services, Customer Advisory Board) to help shape and/or influence product roadmap for Financial Services Cloud
+Salesforce would encourage Bendigo to actively participate in “IdeaExchange” program. IdeaExchange is a public forum for admins, developers, and end users to influence Salesforce product roadmap.  All IdeaExchange users can vote and publish comments on their favorite features that would like to see enhanced. Salesforce product management team actively monitors IdeaExchange, and uses this forum to inform product development. Salesforce loves to “Retire IdeaExchange Points” by building the requested features and being able to successfully close out an Idea.
+
+Salesforce Platform Guardrails (2)
+#
+Guardrail
+Details
+G-03
+Platform : Participate in feature pilots and beta releases
+It is recommended that Bendigo explore opportunities to participate in pilot/beta programs for potentially relevant features within Financial Services Cloud 
+Only considering production release once these capabilities are in Generally Available (GA). 
+Recommendation is to use pilot / beta opportunities for running internal Proof Of Concepts/Pilots in sandbox environments as a precursor of a full production release. Features released within the Salesforce application travel through several states during their life-cycle (i.e. pilot -> Beta -> GA).
+From time to time, Salesforce offers participation in closed pilot or beta release for strategic customers. These early participants can get a sneak-peak of the upcoming capability as well as would have opportunities to provide feedback as part of the SDLC cycle.
+Actively leverage the strategic relationship with Salesforce (through channels such as Sales, Customer Success, Professional Services) to identify potential opportunities.
+G-04
+Platform : Salesforce Customer Advisory Board and Bendigo
+Salesforce encourages Bendigo to actively participate in Customer Advisory Board (CAB) for Financial Services Cloud
+CAB is a select group of customers whose input is sought for strategic planning purposes on an ongoing basis. 
+The primary mission of the CAB is to facilitate open communication between Salesforce product management team(s) and customers. It is a crucial meeting for Salesforce to collect insights around the product roadmap.  
+As a CAB member, Bendigo will have the opportunity to influence decision-making at the highest levels and to experience meaningful interactions with other peers to help the Salesforce product management team increase the value to its customers.
+CAB members generally participate in meetings two times a year. 
+
+Salesforce Platform Guardrails (3)
+#
+Guardrail
+Details
+G-05
+Data Model : Leverage Out Of The Box (OOTB) data model where possible before exploring point-and-click enhancement alternatives
+Bendigo to leverage OOTB data model from Salesforce where possible (with optional introduction of enhancement fields using point-and-click configuration)
+Enhancement objects (including relationships) using point-and-click configuration to be explored as exception only
+G-06
+Customers : Linx as Customer Master
+Bendigo wishes to continue using Linx as Customer Master (keeping in-line with current architecture)
+Leverage integrations to ensure Salesforce is single always has most recent data set and can be treated as “source-of-truth”
+Re-use Bendigo’s existing enterprise architecture
+G-07
+Usability : Leverage Salesforce CRM as single-pane-of-glass for internal staff
+Single-pane-of-glass view in Salesforce for all internal staff to avoid swivel chair and reduce rekeying (where possible)
+Leverage fit-for-purpose pattern(s) to ensure data visibility and availability (i.e. data integration, Open Data (OData) for read-only on-demand retrieval, UI integration using Canvas, AppExchange solution etc)
+G-08
+Security : Follow principle of least privilege for users
+Control what Users can see and do on Salesforce platform using principle of least privilege 
+Role based target visibility for individual to ensure optimal experience
+Restriction of data for compliance and privacy purposes
+
+Salesforce Platform Guardrails (4)
+#
+Guardrail
+Details
+G-09
+Security : Ensure secure integration between Salesforce & Bendigo’s existing platform(s)
+Follow recommended best-practices to ensure that all integrations between Salesforce & Bendigo’s existing platform(s) are secure and have appropriate level of traceability/audit-trail
+Logins per integration context - to allow for better traceability of transactions.
+Mutual Authentication - through 2-way SSL.
+OAuth 2.0 for secure integration
+IP Range Restrictions - ensure that integration points only access Salesforce through approved IP ranges.
+API only profiles - restrict logins to only accessing Salesforce through the API.
+Appropriate firewall access to Bendigo integration points.
+G-10
+Security : Monitor and report on Usage
+Salesforce provides a number of features for monitoring usage in order to prevent data loss, potential data security risk due to user behaviour, ensure alignment to guardrails, improve adoption and performance.
+It is recommended that Bendigo apply the following additional controls for monitoring and reporting on Salesforce usage:
+Monitoring clicks on sensitive data
+Applying Field History tracking for sensitive data on accounts, contacts, leads and opportunities
+Monitoring performance of custom Visualforce pages and API calls
+Applying Transaction Policies to monitor:
+Notify administrators on multiple logins
+Notify administrators on viewing sensitive reports
+Prevent escalation events such as exporting data from reports
+Leverage Shield capabilities to feed advance monitoring logs into Splunk
+Add splunk
+
+Salesforce Platform Guardrails (5)
+#
+Guardrail
+Details
+G-11
+Security : Assess & control 3rd party add-ons
+Ensuring that any 3rd party packages from the Salesforce AppExchange are only installed after a full assessment and approval from Bendigo.
+Recommendation is to perform appropriate level of due-diligence with architecture and security lenses over and above fit-gap & usability assessments
+It is also recommended that a proper options assessment is carried out in the given functional capability area to do a scan of alternatives and perform a full comparison prior to embarking on implementation  
+G-12
+Scalability : Configuration over customisation
+Salesforce recommended best-practice is to always prefer configuration using variety of point-and-click tools available on the platform over customisation
+When customisation are deemed necessary, ensure that these customisations adhere to Salesforce best practices. Customisations that are deviations from best practices, typically have material impacts on:
+Maintainability and Reusability
+Upgradability
+Performance
+G-13
+Scalability : Customisation is not a dirty word
+In Scenarios where customisation is necessary, always follow development best-practice and modular architecture patterns to ensure scalability
+Understanding that “Customisation is not a dirty world” and ensuring appropriate design governance is applied to such decisions
+
+
+Salesforce Platform Guardrails (7)
+#
+Guardrail
+Details
+G-14
+Analytics : Use Salesforce platform for operation reporting and leverage Bendigo’s data warehouse/datalake for any other analytics & insights
+Leverage Salesforce platform for all operational needs with native OOB reports & dashboards
+Continue leveraging existing Bendigo reference architecture pattern for strategic analytics & insights via data warehouse or datalake
+G-15
+Security : Salesforce to rely on Bendigo’s strategic identity & access management platform (i.e. Azure AD) for internal staff
+Azure AD to master all staff identities; Salesforce to delegate SSO to Azure AD
+Break-glass access for selected System Admins with direct access into Salesforce; use MFA or password-less login for additional security
+G-16
+Security : Azure AD to own all user provisioning/deprovisioning/access change requests
+Azure AD to continue own all staff access & identities
+Drive user provisioning/deprovisioning/access change into Salesforce using automations
+G-17
+Delivery : Continuous progression over Perfection
+Striking balance between "Perfection" and "Progression." While striving for perfection in your Salesforce environment is an admirable goal, it's essential to strike a balance with the need for continuous progression.
+Recommended approach is to prefer continuous progression over perceived perfection; as this approach will allow Bendigo to start unlocking business values quickly
+G-18
+Architecture : Consider existing reference architecture for selected niche use-cases
+Consider existing reference architecture for niche use-cases (e.g. document generation/asset management/onboarding) over OOB new capabilities; intention is to ensure speed-to-market by fostering reusability
+It is also important that a correct balance is struck with this to balance innovation vs speed vs ROI; design governance plays crucial role in ensuring this 
