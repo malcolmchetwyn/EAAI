@@ -4,6 +4,9 @@
 This project showcases the integration of AI tools to enhance and automate governance within the enterprise architecture (EA) framework as part of a DevOps pipeline. The objective is to ensure that solution changes consistently adhere to architectural guardrails and standards throughout the development lifecycle.
 
 When applied across the entire lifecycle, this approach enables EA to closely track code development. It also offers stakeholders, particularly those in operations teams, faster and automated visibility into decisions that might deviate from EA or solution architecture (SA) guidelines, thereby reducing time-to-visibility.
+
+Note: this code example shows how we apply Salesforce Well Architected to designs.
+
 [![](https://i.postimg.cc/HxGchxcv/Screenshot-2024-08-20-at-5-04-14-PM.png)](https://i.postimg.cc/HxGchxcv/Screenshot-2024-08-20-at-5-04-14-PM.png)
 
 By minimizing time-to-visibility, stakeholders can stay informed about decisions without disrupting development teams. Not all exceptions need to be blocked; in fact, many operational exceptions are acceptable and sometimes necessary.
