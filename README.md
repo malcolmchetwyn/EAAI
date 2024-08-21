@@ -49,5 +49,5 @@ Overview: The diagram illustrates how enterprise architecture (EA) models, stand
 
 
 
-by Malcolm Fitzgerald and Chriss Huggins
+by Malcolm Fitzgerald and Chris Huggins
 
